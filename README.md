@@ -1,45 +1,33 @@
-# backroom
+# backroom · 后室光线投射演示
 
-#### 介绍
-后室
+> 独立仓 siwpan/backroom（一仓一目录）。Backrooms（后室）风格的光线投射（raycaster）演示程序（pygame + numpy）。
+> 发布面：gitee release `v1.0.0`（Windows 可执行程序，PyInstaller）。
 
-#### 软件架构
-软件架构说明
+## 功能
 
+- pygame + numpy 实现的实时光线投射渲染（后室黄墙/荧光灯走廊风格）。
+- 可选音频：`sounddevice` 实时音效（缺失时自动降级，不影响运行）。
+- 多线程渲染辅助（threading）。
 
-#### 安装教程
+## 运行
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```bash
+pip install -r requirements.txt   # pygame、numpy；sounddevice 可选
+python backrooms_raycaster.pyw
+```
 
-#### 使用说明
+## 测试
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- `test_debug.py` / `test_debug2.py` / `test_debug3.py` / `test_final.py`：光线投射与场景逻辑自检。
 
-#### 参与贡献
+## 打包
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+- `backroom.spec`（PyInstaller，onedir）；调试版 `backroom-dbg.spec`。
 
+## 谱系
 
-#### 特技
+源自 krieger-clone 光线投射实验线（现归档于本地 archive/notpython），本仓为独立演进版。
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## 许可
 
-
----
-
-## 仓库索引标注（2026-08-25 · siwpan 统一治理）
-
-> 后室光线投射演示；本地对应 G:\notpython\krieger-clone\pro3。
-> 本标注为发布面统一追加，不改变原有内容。
+MIT · Copyright (c) 2026 siwpan
