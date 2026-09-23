@@ -1,5 +1,7 @@
 # backroom · 后室光线投射演示
 
+> 仓库：<https://gitee.com/siwpan/backroom> ｜ 许可：MIT-0（MIT No Attribution）（见 [LICENSE](LICENSE)）
+
 > 独立仓 siwpan/backroom（一仓一目录）。Backrooms（后室）风格的光线投射（raycaster）演示程序（pygame + numpy）。
 > 发布面：gitee release `v1.0.0`（Windows 可执行程序，PyInstaller）。
 
