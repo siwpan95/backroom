@@ -71,6 +71,17 @@ python main.py --bench 5     # 5 秒基准
 碰撞不穿墙、异常级联走完整条链、noclip 必有位移、auto-pilot 150s 必须走出
 出生区块、轨迹确定性（录制可复现的前提）。
 
+## 打包
+
+```bash
+.venv/Scripts/python -m pip install pyinstaller
+python scripts/build_exe.py                  # onedir → dist/backroom/backroom.exe
+```
+
+零外部素材（材质与音床都是运行时程序化生成），不需要 `--add-data` 任何资源。
+产物约 23MB（onedir）；分发时整目录压成一个 zip（实测 11.6MB，62 文件）。
+发布面：gitee release `v2.0.0`（Windows 可执行程序 + SHA256SUMS）。
+
 ## 谱系
 
 - v1：源自 krieger-clone 光线投射实验线（归档于 `archive/`）。
