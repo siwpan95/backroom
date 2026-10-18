@@ -13,12 +13,23 @@ bin-release/
 *.ipa
 *.apk
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
-
 # 未跟踪产物/输出治理（2026-08-28）
 *.spec
 __pycache__/
 build/
 dist/
+
+# 虚拟环境
+.venv/
+
+# 程序化合成的音频缓存（可随时重新生成，不入库）
+assets/*.wav
+
+# 截图 / 录制产物
+docs/*.png
+recordings/
+
+# IDE / 系统
+.idea/
+.vscode/
+Thumbs.db

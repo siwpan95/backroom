@@ -1,0 +1,4 @@
+# backroom 运行时依赖
+# 核心引擎：3dworld（渲染 / 材质 / 合批 / 相机 / 后处理 / 装配框架）
+# PyPI: https://pypi.org/project/3dworld/
+3dworld>=0.1.0
