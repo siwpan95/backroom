@@ -1,5 +1,12 @@
 # backroom · 无尽阈室（v2.0 · 3dworld 引擎重构版）
 
+## 仓库角色定位（投资组合分级 ②）
+
+> 本仓在 siwpan 投资组合（D:/projects/repos，共 133 仓）中定级为 **② 精选旗舰**，领域 **游戏作品**。
+> **角色**：游戏旗舰/3D展示。
+> **维护策略**：② 旗舰 / 枢纽仓库打磨保留，作为能力展示或收敛点；② 保留类仓库低优先维持、不主动扩张。
+> 投资组合统一分级索引：`D:/projects/repos/PORTFOLIO_TIERING.md`。
+
 > 仓库：<https://gitee.com/siwpan/backroom> ｜ 许可：MIT-0（MIT No Attribution）（见 [LICENSE](LICENSE)）
 
 Backrooms（后室）风格的**伪无限**第一人称漫游。
