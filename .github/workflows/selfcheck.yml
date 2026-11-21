@@ -1,0 +1,29 @@
+name: selfcheck
+
+# 本仓的最小 CI：clean clone → 装依赖 → 跑本仓自带的无头自检。
+# 由 allin 仓 tools/publish_area_ci.py 生成（2026-11-21）；入口与依赖取自本仓自身事实。
+# 钉 Python 3.11：3.13 移除了 audioop，pydub 等音频依赖在 3.13 上导入即失败。
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  selfcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: 无头自检
+        run: python selfcheck.py
+        env:
+          PYTHONIOENCODING: utf-8
+          SDL_VIDEODRIVER: dummy
+          SDL_AUDIODRIVER: dummy
